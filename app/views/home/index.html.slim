@@ -1,0 +1,139 @@
+
+section.slider
+  .slide-info
+    p Faça agora mesmo uma cotação
+    h1.hidden-xs PROTEGEAUTO
+    p.hidden-xs
+      | A forma mais fácil e econômica de proteger seus bens
+      br/
+      | Protegemos seus veículos e sua família.
+    = link_to new_quote_path, class: 'button-quotation'
+      = image_tag 'quotation.png'
+
+  #slider.owl-carousel
+    .slide-item
+      = image_tag 'banner1.jpg'
+
+
+/! = HIGHLIGHTS =
+section.highlights
+  .bg-highlights
+  .container
+    ul.highlights-list.row
+      li.col-sm-3.col-xs-6
+        figure
+          = image_tag 'check.png'
+        p
+          | Simples e
+          br/
+          | Eficiente
+      li.col-sm-3.col-xs-6
+        figure
+          = image_tag 'cofre.png'
+        p
+          | Cabe no
+          br/
+          | seu Bolso
+      li.col-sm-3.col-xs-6
+        figure
+          = image_tag 'guincho.png'
+        p
+          | Assistência
+          br/
+          | 24 Horas
+      li.col-sm-3.col-xs-6
+        figure
+          = image_tag 'agilidade.png'
+        p
+          | Agilidade
+          br/
+          | no Atendimento
+
+
+/! = QUALITY =
+section.quality
+  .container
+    .quality-description
+      h3.title.uppercase.orange  QUALIDADE COM PREÇOS COMPETITIVOS
+      h5.text Ao contratar o ProtegeAuto, você protege seu carro pagando um valor que cabe no seu orçamento e ainda pode contratar as coberturas adicionais mais adequadas ao seu dia a dia. Confira os benefícios:
+    /! /.quality-description
+    ul.quality-list.row
+      li.col-md-3.col-sm-6
+        figure
+          = image_tag 'qualidade1.png'
+        h6.quality-title
+          | O melhor
+          br/
+          | Seguro
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus luctus purus.
+      li.col-md-3.col-sm-6
+        figure
+          = image_tag 'qualidade2.png'
+        h6.quality-title
+          | O melhor
+          br/
+          | Seguro
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus luctus purus.
+      li.col-md-3.col-sm-6
+        figure
+          = image_tag 'qualidade3.png'
+        h6.quality-title
+          | O melhor
+          br/
+          | Seguro
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus luctus purus.
+      li.col-md-3.col-sm-6
+        figure
+          = image_tag 'qualidade4.png'
+        h6.quality-title
+          | O melhor
+          br/
+          | Seguro
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus luctus purus.
+      li.col-md-3.col-sm-6
+        figure
+          = image_tag 'qualidade5.png'
+        h6.quality-title
+          | O melhor
+          br/
+          | Seguro
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus luctus purus.
+      li.col-md-3.col-sm-6
+        figure
+          = image_tag 'qualidade6.png'
+        h6.quality-title
+          | O melhor
+          br/
+          | Seguro
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus luctus purus.
+      li.col-md-3.col-sm-6
+        figure
+          = image_tag 'qualidade7.png'
+        h6.quality-title
+          | O melhor
+          br/
+          | Seguro
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus luctus purus.
+      li.col-md-3.col-sm-6
+        figure
+          = image_tag 'qualidade8.png'
+        h6.quality-title
+          | O melhor
+          br/
+          | Seguro
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus luctus purus.
+
+
+
+== render 'elements/mais_produtos'
+
+
+/! = QUOTATION =
+section.quotation
+  .container
+    .row
+      .col-sm-8
+        p Ao contratar o ProtegeAuto, você protege seu carro pagando um valor que cabe no seu orçamento e ainda pode contratar as coberturas adicionais mais adequadas ao seu dia a dia. Confira os benefícios:
+      .col-sm-4
+        = link_to new_quote_path, class: 'button-quotation'
+          = image_tag 'quotation.png'

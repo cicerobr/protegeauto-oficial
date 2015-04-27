@@ -1,0 +1,117 @@
+@import "bootstrap.min";
+
+/* Google fonts */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300);
+
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+textarea.form-control{
+	height: 250px;
+}
+
+select.form-control{
+	width: 120px;
+	display: inline-block;
+}
+
+.nav-topo{
+	background: #2E3D44;
+	color: #fff;
+}
+
+.logo{
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+	margin: 13px 0 0 0;
+}
+
+	a{
+		color: #fff;
+		text-decoration: none;
+  }
+
+.mn-adm-top{
+	ul{
+		li{
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+			font-weight: 300;
+			color: #fff;
+			list-style: none;
+			float: left;
+			padding: 20px;
+			margin: -10px 0 0 0;
+
+			a{
+				color: #fff;
+				text-decoration: none;
+      }
+    }
+  }
+}
+
+.mn-top-right{
+	ul{
+		li{
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+			font-weight: 300;
+			color: #fff;
+			list-style: none;
+			float: left;
+			padding: 22px;
+			margin: -10px 0 0 0;
+
+			a{
+				color: #fff;
+				text-decoration: none;
+
+				&:hover{
+					color: #3185A7;
+					text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.mn-active{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #fff;
+	list-style: none;
+	float: left;
+	padding: 22px;
+	margin: -10px 0 0 0;
+	background: #1E292E;
+	border-bottom: solid 4px #F5A623;
+}
+
+	.bx-login{
+		top: 490px;
+		float: left;
+		position: relative;
+  }
+
+.bt-action{
+	margin: 30px 0 0 0;
+}
+
+.bx-tits{
+	width: 100%;
+	padding: 0 0 80px 0;
+	margin: 0 0 20px 0;
+	border-bottom: solid 1px #e7e7e7;
+}
+
+
+.bt-actions{
+  top:-30px;
+  position: relative;
+}

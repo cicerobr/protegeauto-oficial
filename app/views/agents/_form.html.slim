@@ -1,0 +1,22 @@
+= simple_form_for(@agent) do |f|
+  = f.error_notification
+
+  .col-sm-6
+    .form-group
+      = f.input :name
+      = f.input :cidade_uf
+      = f.input :telefone
+      = f.input :email
+
+  .col-sm-6
+    .form-group
+      = f.input :escolaridade
+      = f.input :local_representacao
+      = f.input :exp_profissional
+
+  .col-sm-12
+    = f.button :submit, value: 'Enviar pedido', class: 'btn btn-primary'
+
+  br/
+  br/
+  br/

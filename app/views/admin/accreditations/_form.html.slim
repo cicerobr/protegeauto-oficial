@@ -1,0 +1,15 @@
+= simple_form_for([:admin, @accreditation]) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :cidade_uf
+    = f.input :telefone
+    = f.input :email
+    = f.input :cnpj
+    = f.input :ref_comercial_name
+    = f.input :ref_comercial_telefone
+    = f.input :como_conheceu
+
+  .form-actions
+    = f.button :submit, class: 'btn btn-primary'

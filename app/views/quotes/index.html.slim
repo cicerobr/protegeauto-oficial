@@ -1,0 +1,39 @@
+h1 Listing quotes
+
+table
+  thead
+    tr
+      th Modelo veiculo
+      th Ano veiculo
+      th Placa veiculo
+      th Valor fipe
+      th Name
+      th Email
+      th Rg
+      th Cpf
+      th Telefone
+      th Status atendimento
+      th
+      th
+      th
+
+  tbody
+    - @quotes.each do |quote|
+      tr
+        td = quote.modelo_veiculo
+        td = quote.ano_veiculo
+        td = quote.placa_veiculo
+        td = quote.valor_fipe
+        td = quote.name
+        td = quote.email
+        td = quote.rg
+        td = quote.cpf
+        td = quote.telefone
+        td = quote.status_atendimento
+        td = link_to 'Show', quote
+        td = link_to 'Edit', edit_quote_path(quote)
+        td = link_to 'Destroy', quote, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Quote', new_quote_path

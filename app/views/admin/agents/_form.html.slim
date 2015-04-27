@@ -1,0 +1,14 @@
+= simple_form_for([:admin, @agent]) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :cidade_uf
+    = f.input :telefone
+    = f.input :email
+    = f.input :escolaridade
+    = f.input :local_representacao
+    = f.input :exp_profissional
+
+  .form-actions
+    = f.button :submit

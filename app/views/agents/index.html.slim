@@ -1,0 +1,33 @@
+h1 Listing agents
+
+table
+  thead
+    tr
+      th Name
+      th Cidade uf
+      th Telefone
+      th Email
+      th Escolaridade
+      th Local representacao
+      th Exp profissional
+      th
+      th
+      th
+
+  tbody
+    - @agents.each do |agent|
+      tr
+        td = agent.name
+        td = agent.cidade_uf
+        td = agent.telefone
+        td = agent.email
+        td = agent.escolaridade
+        td = agent.local_representacao
+        td = agent.exp_profissional
+        td = link_to 'Show', agent
+        td = link_to 'Edit', edit_agent_path(agent)
+        td = link_to 'Destroy', agent, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Agent', new_agent_path

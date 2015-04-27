@@ -1,0 +1,44 @@
+section.internal-header.beneficios24
+  .container
+    = image_tag 'icon-beneficios.png', class: 'img-responsive'
+    h2.header-title Seja um Representante
+    p Faça parte desta equipe de sucesso
+
+section.page-subtitle
+			.container
+				p A Protegeauto agradece seu interesse. <br> Entraremos em contato o mais breve possível
+
+
+section.content
+  .container
+    .form-cotacao
+
+      .bx-form-1
+
+        h3 Seus dados enviados foram:
+
+        p
+          strong Name: <br>
+          = @agent.name
+        p
+          strong Cidade uf: <br>
+          = @agent.cidade_uf
+        p
+          strong Telefone: <br>
+          = @agent.telefone
+        p
+          strong Email: <br>
+          = @agent.email
+        p
+          strong Escolaridade: <br>
+          = @agent.escolaridade
+        p
+          strong Local representacao: <br>
+          = @agent.local_representacao
+        p
+          strong Exp profissional: <br>
+          = @agent.exp_profissional
+
+        br/
+
+        br/

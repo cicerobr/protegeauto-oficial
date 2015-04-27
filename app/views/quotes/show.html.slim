@@ -1,0 +1,48 @@
+section.internal-header.beneficios24
+  .container
+    = image_tag 'icon-beneficios.png', class: 'img-responsive'
+    h2.header-title Cotação Protegeauto
+    p Proteção veicular sem burocracia
+
+section.page-subtitle
+			.container
+				p Obrigado por escolher a Protegeauto. <br> Entraremos em contato o mais breve possível com sua proposta.
+
+section.content
+  .container
+    .form-cotacao
+      .bx-form-1
+
+        h3 Os dados de sua cotação são:
+
+        p
+          strong Modelo veiculo: <br>
+          = @quote.modelo_veiculo
+        p
+          strong Ano veiculo: <br>
+          = @quote.ano_veiculo
+        p
+          strong Placa veiculo: <br>
+          = @quote.placa_veiculo
+        p
+          strong Valor fipe: <br>
+          = @quote.valor_fipe
+        p
+          strong Name: <br>
+          = @quote.name
+        p
+          strong Email: <br>
+          = @quote.email
+        p
+          strong Rg: <br>
+          = @quote.rg
+        p
+          strong Cpf: <br>
+          = @quote.cpf
+        p
+          strong Telefone: <br>
+          = @quote.telefone
+
+        br/
+        br/
+        br/

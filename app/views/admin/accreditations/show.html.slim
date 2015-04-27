@@ -1,0 +1,37 @@
+h1 Detalhes da Empresa Credenciada
+hr/
+
+p#notice = notice
+
+p
+  strong Name: <br>
+  = @accreditation.name
+p
+  strong Cidade uf: <br>
+  = @accreditation.cidade_uf
+p
+  strong Telefone: <br>
+  = @accreditation.telefone
+p
+  strong Email: <br>
+  = @accreditation.email
+p
+  strong Cnpj: <br>
+  = @accreditation.cnpj
+p
+  strong Ref comercial name: <br>
+  = @accreditation.ref_comercial_name
+p
+  strong Ref comercial telefone: <br>
+  = @accreditation.ref_comercial_telefone
+p
+  strong Como conheceu: <br>
+  = @accreditation.como_conheceu
+
+br/
+
+= link_to 'Back', accreditations_path, class: 'btn btn-primary'
+
+br/
+br/
+br/

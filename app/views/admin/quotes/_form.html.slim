@@ -1,0 +1,24 @@
+= simple_form_for([:admin, @quote]) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :modelo_veiculo
+    = f.input :ano_veiculo
+    = f.input :placa_veiculo
+    = f.input :valor_fipe
+    = f.input :name
+    = f.input :email
+    = f.input :rg
+    = f.input :cpf
+    = f.association :state, prompt: 'Selecione'
+    = f.input :telefone
+    = f.select :status_atendimento, [['Em atendimento'], ['Não vendido'], ['Vendido']]
+
+  br/
+  
+  .form-actions
+    = f.button :submit, class: 'btn btn-primary'
+
+  br/
+  br/
+  br/

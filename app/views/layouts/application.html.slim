@@ -1,0 +1,127 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+
+		title Protegeauto oficial
+  	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  	= csrf_meta_tags
+
+		/[if lt IE 9]
+  	= javascript_include_tag 'https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js', 'data-turbolinks-track' => true
+  	= javascript_include_tag 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js', 'data-turbolinks-track' => true
+
+	body
+
+		header.header
+	      nav.navbar.navbar-default role="navigation"
+	        .container
+	          /! Brand and toggle get grouped for better mobile display
+	          .navbar-header
+	            button.navbar-toggle data-target="#main-menu" data-toggle="collapse" type="button"
+	              span.sr-only Toggle navigation
+	              span.icon-bar
+	              span.icon-bar
+	              span.icon-bar
+	            a.navbar-brand href="#"
+							= link_to root_path, class: 'navbar-brand'
+								= image_tag 'logo.png'
+
+	          #main-menu.collapse.navbar-collapse
+
+	            ul.nav.navbar-nav
+
+	              li
+									= link_to 'Início', root_path
+	              li
+									= link_to 'Quem somos', business_index_path
+
+									li.dropdown
+									  a.dropdown-toggle aria-expanded="false" data-toggle="dropdown" href="#" role="button"
+									    | Associado
+									    span.caret
+									  ul.dropdown-menu role="menu"
+									    /li
+												/= link_to 'Login do Associado', user_session_path
+									    li
+												= link_to 'Rastreador', 'http://rastreadoramiggo.com.br/'
+									    li
+												= link_to 'Perguntas Frequentes', questions_path
+									    li
+												= link_to '2ª Via de Boletos', billet_index_path
+
+									li.dropdown
+									  a.dropdown-toggle aria-expanded="false" data-toggle="dropdown" href="#" role="button"
+									    | Representantes
+									    span.caret
+									  ul.dropdown-menu role="menu"
+									    li
+												= link_to 'Login Gestao de Leads', user_session_path
+									    /li
+												/= link_to 'Login Contratos', user_session_path
+									    li
+												= link_to 'Seja um Representante', new_agent_path
+
+									li.dropdown
+									  a.dropdown-toggle aria-expanded="false" data-toggle="dropdown" href="#" role="button"
+									    | Fornecedores
+									    span.caret
+									  ul.dropdown-menu role="menu"
+									    li
+												= link_to 'Credencie-se', new_accreditation_path
+
+	              li
+									= link_to 'Contato', '#'
+
+
+    = yield
+
+    footer
+      .container
+        .row
+          .col-md-9
+            ul.footer-menu.clearfix
+          .col-md-3
+            .footer-phone
+							= image_tag 'telefone.png'
+        .row
+          .footer-address.col-md-6
+            .row
+              figure.col-sm-6
+								= image_tag 'bonaparte.png'
+              .col-sm-6
+                p
+                  | Sede Brasília
+                  br/
+                  | SHS Quadra 02 Bloco J Sala 101
+                  br/
+                  | Bonaparte Hotel - Brasília/DF
+          .footer-phones.col-md-6
+            ul.phones-list
+              li
+                p
+                  | Assistência Veicular
+                  span.glyphicon.glyphicon-earphone
+                    span.phone 0800 644 0088
+              li
+                p
+                  | Help Desk
+                  span.glyphicon.glyphicon-earphone
+                    span.phone 0800 767 1100
+              li
+                p
+                  | Assistência Empresarial
+                  span.glyphicon.glyphicon-earphone
+                    span.phone 0800 722 5665
+              li
+                p
+                  | Orientação Jurídica
+                  span.glyphicon.glyphicon-earphone
+                    span.phone 0800 200 2424
+          .copyright.col-md-6
+            p Todos os direitos reservados 2015
+          .powered.col-md-6
+            p Powered by Centelha
+
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true

@@ -1,0 +1,43 @@
+= simple_form_for(@quote) do |f|
+  = f.error_notification
+
+  .col-lg-12
+
+    h3 Dados do Veículo
+
+    .col-sm-6
+      .form-group
+        = f.input :modelo_veiculo, placeholder: 'Informe o modelo de seu veículo', label: 'Modelo do Veículo'
+      .form-group
+        = f.input :placa_veiculo, placeholder: 'Informe a placa', label: 'Placa do Veículo'
+
+    .col-sm-6
+      .form-group
+        = f.input :ano_veiculo, placeholder: 'Informe o ano do seu veículo', label: 'Ano do Veículo'
+      .form-group
+        = f.input :valor_fipe, placeholder: 'Consulte a tabela FIPE e informe o valor de seu veículo', label: 'Valor de tabela FIPE do veículo'
+
+
+  .mg-tit
+
+  .col-lg-12
+
+    h3 Dados Pessoais
+    .col-sm-6
+      .form-group
+        = f.input :name, placeholder: 'Informe o nome completo', label: 'Nome completo'
+      .form-group
+        = f.input :rg, placeholder: 'Informe seu RG', label: 'RG'
+      .form-group
+        = f.association :state, prompt: 'Selecione'
+
+    .col-sm-6
+      .form-group
+        = f.input :email, placeholder: 'Informe seu email', label: 'Email'
+      .form-group
+        = f.input :cpf, placeholder: 'Informe seu CPF', label: 'CPF'
+      .form-group
+        = f.input :telefone, placeholder: 'Informe seu telefone', label: 'Telefone'
+
+    .bx-button
+      = f.button :submit, value: 'Solicitar Cotação', class: 'btn btn-primary btn-lg'

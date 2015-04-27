@@ -1,0 +1,23 @@
+= simple_form_for(@accreditation) do |f|
+  = f.error_notification
+
+  .col-sm-6
+    .form-group
+      = f.input :name, label: 'Nome completo'
+      = f.input :cidade_uf, label: 'Cidade/UF'
+      = f.input :telefone, label: 'Telefone'
+      = f.input :email, label: 'Seu email'
+
+  .col-sm-6
+    .form-group
+      = f.input :cnpj, label: 'CNPJ'
+      = f.input :ref_comercial_name, label: 'Referência (Nome)'
+      = f.input :ref_comercial_telefone, label: 'Telefone (Referência)'
+      = f.input :como_conheceu, label: 'Como nos conheceu?'
+
+  .col-sm-12
+    = f.button :submit, class: 'btn btn-primary', value: 'Solicitar Credenciamento'
+
+  br/
+  br/
+  br/

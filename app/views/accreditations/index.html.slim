@@ -1,0 +1,35 @@
+h1 Listing accreditations
+
+table
+  thead
+    tr
+      th Name
+      th Cidade uf
+      th Telefone
+      th Email
+      th Cnpj
+      th Ref comercial name
+      th Ref comercial telefone
+      th Como conheceu
+      th
+      th
+      th
+
+  tbody
+    - @accreditations.each do |accreditation|
+      tr
+        td = accreditation.name
+        td = accreditation.cidade_uf
+        td = accreditation.telefone
+        td = accreditation.email
+        td = accreditation.cnpj
+        td = accreditation.ref_comercial_name
+        td = accreditation.ref_comercial_telefone
+        td = accreditation.como_conheceu
+        td = link_to 'Show', accreditation
+        td = link_to 'Edit', edit_accreditation_path(accreditation)
+        td = link_to 'Destroy', accreditation, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Accreditation', new_accreditation_path

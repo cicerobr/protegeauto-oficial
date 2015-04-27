@@ -1,0 +1,42 @@
+section.internal-header.beneficios24
+  .container
+    = image_tag 'icon-beneficios.png', class: 'img-responsive'
+    h2.header-title Credencie-se
+    p Torne-se uma empresa credenciada Protegeauto
+
+section.page-subtitle
+			.container
+				p Obrigado, nós recebemos seus dados! <br> A Protegeauto entrará em contato o mais breve possível!
+
+section.content
+  .container
+    .form-cotacao
+
+      .bx-form-1
+
+        h3 Seus dados enviados foram:
+
+        p
+          strong Nome completo: <br>
+          = @accreditation.name
+        p
+          strong Cidade/UF: <br>
+          = @accreditation.cidade_uf
+        p
+          strong Telefone: <br>
+          = @accreditation.telefone
+        p
+          strong Email: <br>
+          = @accreditation.email
+        p
+          strong Cnpj: <br>
+          = @accreditation.cnpj
+        p
+          strong Referência Comercial (nome): <br>
+          = @accreditation.ref_comercial_name
+        p
+          strong Referência Comercial (telefone): <br>
+          = @accreditation.ref_comercial_telefone
+        p
+          strong Como nos conheceu?: <br>
+          = @accreditation.como_conheceu
