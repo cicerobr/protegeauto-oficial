@@ -37,6 +37,8 @@ html
 									= link_to 'Início', root_path
 	              li
 									= link_to 'Quem somos', business_index_path
+	              li
+									= link_to 'Simulador', 'http://sistemas.grupohermanos.com.br:8080/protegeauto/centelha/formulario.jsp'
 
 									li.dropdown
 									  a.dropdown-toggle aria-expanded="false" data-toggle="dropdown" href="#" role="button"
@@ -50,7 +52,7 @@ html
 									    li
 												= link_to 'Perguntas Frequentes', questions_path
 									    li
-												= link_to '2ª Via de Boletos', billet_index_path
+												= link_to '2ª Via de Boletos', 'http://sistemas.grupohermanos.com.br:8080/protegeauto/boleto_centelha/index.jsp'
 
 									li.dropdown
 									  a.dropdown-toggle aria-expanded="false" data-toggle="dropdown" href="#" role="button"
@@ -59,8 +61,8 @@ html
 									  ul.dropdown-menu role="menu"
 									    li
 												= link_to 'Login Gestao de Leads', user_session_path
-									    /li
-												/= link_to 'Login Contratos', user_session_path
+									    li
+												= link_to 'Área do Representante', 'http://sistemas.grupohermanos.com.br:8080/protegeauto/centelha/login.jsp'
 									    li
 												= link_to 'Seja um Representante', new_agent_path
 
